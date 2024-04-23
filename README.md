@@ -14,7 +14,7 @@ To replay the examples of the article, user can execute function `GPFigureX()` o
 The function returns a string corresponding to the PG-Schema[^4] translation.
 
 ## Replaying examples of article of (Fan et al., 2017)[^5]
-To replay the examples of the article of (Fan et al., 2017)[^5], user can execute function `GPGEDQ3()` with 'X' corresponding to the number of the example in the article of (Fan et al., 2017)[^5].
+To replay the examples of the article of (Fan et al., 2017)[^5], user can execute function `GPGEDQX()` with 'X' corresponding to the number of the example in the article of (Fan et al., 2017)[^5]. User should, for example, execute `GPGEDQ2()` to translate the Graph dependency *Q<sub>2</sub>* in the article of (Fan et al., 2017)[^5].
 
 The function returns a string corresponding to the PG-Schema[^4] translation.
 
