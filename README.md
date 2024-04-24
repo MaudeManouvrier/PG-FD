@@ -1,7 +1,7 @@
 # PG-FD: Mapping Functional Dependencies to the Future Property Graph Schema Standard
 *Under construction*
 
-PG-FD is a Python program that uses the *networkx*[^1] Python module of https://networkx.org/ and the *functional_dependencies*[^2] of https://oer.gitlab.io/cs/functional-dependencies.
+This repository contains the source code of PG-FD, a Python program that uses the *networkx*[^1] Python module of https://networkx.org/ and the *functional_dependencies*[^2] of https://oer.gitlab.io/cs/functional-dependencies.
 
 >[!NOTE] 
 For more details, please refer to the paper: Maude Manouvrier and Khalid Belhajjame, *PG-FD: Mapping Functional Dependencies to the Future Property Graph Schema Standard*, submitted.
