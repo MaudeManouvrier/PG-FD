@@ -20,8 +20,9 @@ The functions return a *MultiDiGraph* of the *networkx*[^1] Python module repres
 
 ## To translate graph dependencies into PG-Schema[^4]
 * To translate a GED[^5][^6] into PG-Schema, user should call function `GED2PGS(GP,X,Y)` with *GP* a *MultiDiGraph* of the *networkx*[^1] Python module representing the graph pattern or a graph pattern defined in an ASCII art notation, *X* and *Y* the right and left part of the graph dependency.
-* To translate a gFD[^7] into PG-Schema, user should call function `gFD2PGS(L,P,fd)` with *L* a set of node labels, *P* a set of properties and *fd* a functional dependency defined using the *functional_dependencies*[^2] module.
 * To translate a GD[^8] into PG-Schema, user should call function `GD2PGS(GP,X,Y)` with *GP* a *MultiDiGraph* of *networkx*[^1] Python module representing the graph pattern or a graph pattern defined in an ASCII art notation, *X* and *Y* the right and left part of the graph dependency.
+* To translate a gFD[^7] into PG-Schema, user should call function `gFD2PGS(L,P,fd)` with *L* a set of node labels, *P* a set of properties and *fd* a functional dependency defined using the *functional_dependencies*[^2] module.
+* To translate a relational FD into PG-Schema, user should call function `RelPGS(fd,R)` with *fd* a functional dependency defined using the *functional_dependencies*[^2] module and *R* the name of the relational schema.
 
 All functions return a string corresponding to the PG-Schema[^4] translation.
 
