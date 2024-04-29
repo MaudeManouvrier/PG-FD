@@ -154,7 +154,6 @@ def merge_cypher_strings(cypher_string):
             if(nbmerged==0):
                 merged_parts.append(part)
                 nbmerged += 1
-    print(merged_parts)
     #if the second strings begins by a node (i.e. a parenthesis)
     if merged_parts[1][0]=="(":
         merged_cypher_string = "".join(merged_parts[::-1])
@@ -331,6 +330,7 @@ if __name__ == '__main__':
     # For example Q1 of (Fan et al., 2017)
     GP, X, Y = GPGEDQ1()
     print("Translation example Q1 of (Fan et al., 2017) into PG-Schema:\n", GED2PGS(GP,X,Y), sep="")
+    print()
 
     # For example Q2 of (Fan et al., 2017)
     GP, X, Y = GPGEDQ2()
