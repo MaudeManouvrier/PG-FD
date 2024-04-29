@@ -8,7 +8,7 @@ pip install networkx
 pip install functional-dependencies
 ```
 
-### To replay [examples](https://github.com/MaudeManouvrier/PG-FD/blob/main/src/sampleResults.md) of the article or examples of (Fan et al., 2017)
+### To replay [examples](https://github.com/MaudeManouvrier/PG-FD/blob/main/src/sampleResults.md) of the article or examples of [(Fan et al., 2017)](https://www.pure.ed.ac.uk/ws/portalfiles/portal/44159778/pods17.pdf)
 
 ### To define your own GED 
 1. Define a Graph Pattern :
