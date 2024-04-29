@@ -7,3 +7,5 @@ pip install networkx
 ```
 pip install functional-dependencies
 ```
+
+[Exemples d'exécution](https://github.com/MaudeManouvrier/PG-FD/blob/main/src/sampleResults.md)
