@@ -20,8 +20,8 @@ def defineGraphPattern():
         GP.add_edge(n1l,n2l,label=el)
     return GP
 
-# Graph Pattern of the Example of Figure 4
-def GPFigure4():
+# Graph Pattern of the Example of Figure 3
+def GPFigure3():
     GP = nx.MultiDiGraph()
     GP.add_node("y", label="Person")
     GP.add_node("x", label="Article")
@@ -29,8 +29,8 @@ def GPFigure4():
     GP.add_edge("y", "x", key=1, label="ReviewerOf")
     return GP, [], False
 
-# Graph Pattern of the Example of Figure 5
-def GPFigure5():
+# Graph Pattern of the Example of Figure 4
+def GPFigure4():
     GP = nx.MultiDiGraph()
     GP.add_node("y", label="Conf")
     GP.add_node("x", label="Article")
@@ -40,13 +40,13 @@ def GPFigure5():
     GP.add_edge("x'", "y'", key=0, label="SubmittedTo")
     return GP, ["x.title=x'.title","y.id=y'.id"], ["x.id=x'.id"]
 
-# Graph Pattern of the Example of Figure 4 in ASCII format
-def GPAsciiFigure4():
+# Graph Pattern of the Example of Figure 3 in ASCII format
+def GPAsciiFigure3():
     GP = "(y:Person)-[:AuthorOf]->(x:Article)<-[:ReviewerOf]-(y:Person)"
     return GP, [], False
 
-# Graph Pattern of the Example of Figure 5 in ASCII format
-def GPAsciiFigure5():
+# Graph Pattern of the Example of Figure 4 in ASCII format
+def GPAsciiFigure4():
     GP = "(x:Article)-[:SubmittedTo]->(y:Conf)\n(x':Article)-[:SubmittedTo]->(y':Conf)"
     return GP, ["x.title=x'.title","y.id=y'.id"], ["x.id=x'.id"]
 
@@ -210,8 +210,8 @@ def GED2PGS(GP,X,Y):
     return constraint
 
 
-# Graph Pattern of the Example of Figure 2
-def GPFigure2():
+# Graph Pattern of the Example of Figure 1
+def GPFigure1():
     GP = nx.MultiDiGraph()
     GP.add_node("y", label="Conf")
     GP.add_node("x", label="Article")
@@ -297,7 +297,7 @@ def Rel2PGS(fd,R):
     return constraint
 
 
-# Run examples of the article or of (Fan et al., 2017) by default.
+# Run examples of our article or GED examples of (Fan et al., 2017) by default.
 if __name__ == '__main__':
 
     # For gFD translation - using the example of our article
@@ -305,26 +305,26 @@ if __name__ == '__main__':
     print("Translation of the gFD example of our article into PG-Schema:\n",gFD2PGS(L,P,fd))
     print()
 
-    # For example 4 of our article
-    GP, X, Y = GPFigure4()
-    print("Translation of example 4 into PG-Schema:\n", GED2PGS(GP,X,Y), sep="")
+    # For GED example of Figure 3 of our article
+    GP, X, Y = GPFigure3()
+    print("Translation of Figure 3 GED example into PG-Schema:\n", GED2PGS(GP,X,Y), sep="")
     print()
 
-    # For example 4 of our article in Ascii format
+    # For GED example of Figure 3 in Ascii format
+    GPAscii, X, Y = GPAsciiFigure3()
+    GP = cypher_ascii_to_networkx(GPAscii)
+    print("Translation Translation of Figure 3 GED example (in Ascii) into PG-Schema:\n", GED2PGS(GP,X,Y), sep="")
+    print()
+
+    # For GED example of Figure 4 of our article
+    GP, X, Y = GPFigure4()
+    print("Translation of Figure 4 GED example into PG-Schema:\n", GED2PGS(GP,X,Y), sep="")
+    print()
+
+    # GED example of Figure 4 in Ascii format
     GPAscii, X, Y = GPAsciiFigure4()
     GP = cypher_ascii_to_networkx(GPAscii)
-    print("Translation of example 4 (in Ascii) into PG-Schema:\n", GED2PGS(GP,X,Y), sep="")
-    print()
-
-    # For example 5 of our article
-    GP, X, Y = GPFigure5()
-    print("Translation of example 5 into PG-Schema:\n", GED2PGS(GP,X,Y), sep="")
-    print()
-
-    # For example 5 of our article in Ascii format
-    GPAscii, X, Y = GPAsciiFigure5()
-    GP = cypher_ascii_to_networkx(GPAscii)
-    print("Translation of example 5 (in Ascii) into PG-Schema:\n", GED2PGS(GP,X,Y), sep="")
+    print("Translation of Figure 4 GED example (in Ascii) into PG-Schema:\n", GED2PGS(GP,X,Y), sep="")
     print()
 
     # For example Q1 of (Fan et al., 2017)
@@ -343,7 +343,7 @@ if __name__ == '__main__':
     print()
 
     # For example of GD of our article
-    GP, X, Y = GPFigure2()
+    GP, X, Y = GPFigure1()
     print("Translation example of GD of our article into PG-Schema:\n", GED2PGS(GP,X,Y), sep="")
 
     # To define user Graph Pattern
