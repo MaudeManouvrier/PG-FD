@@ -13,14 +13,14 @@ To replay the examples of the article, user can execute function `GPFigureX()` o
 
 The functions return a *MultiDiGraph* of *networkx*[^1] Python module representing the graph pattern or a graph pattern defined in an ASCII art notation.
 
-See [execution examples](https://github.com/MaudeManouvrier/PG-FD/blob/main/src/sampleResults.md)
+See [execution examples](https://github.com/MaudeManouvrier/PG-FD/blob/main/src/sampleResults.md).
 
 ##  To create the graph dependencies examples of article of (Fan et al., 2017)[^5]
 To replay the examples of the article of (Fan et al., 2017)[^5], user can execute function `GPGEDQX()` with 'X' corresponding to the number of the example in the article of (Fan et al., 2017)[^5]. User should, for example, execute `GPGEDQ2()` to translate the Graph dependency *Q<sub>2</sub>* in the article of (Fan et al., 2017)[^5].
 
 The functions return a *MultiDiGraph* of the *networkx*[^1] Python module representing the graph pattern or a graph pattern defined in an ASCII art notation.
 
-See [execution examples](https://github.com/MaudeManouvrier/PG-FD/blob/main/src/sampleResults.md)
+See [execution examples](https://github.com/MaudeManouvrier/PG-FD/blob/main/src/sampleResults.md).
 
 ## To translate graph dependencies into PG-Schema[^4]
 * To translate a GED[^5][^6] into PG-Schema, user should call function `GED2PGS(GP,X,Y)` with *GP* a *MultiDiGraph* of the *networkx*[^1] Python module representing the graph pattern or a graph pattern defined in an ASCII art notation, *X* and *Y* the right and left part of the graph dependency.
@@ -30,7 +30,7 @@ See [execution examples](https://github.com/MaudeManouvrier/PG-FD/blob/main/src/
 
 All functions return a string corresponding to the PG-Schema[^4] translation.
 
-See [guidlines to execute the functions](https://github.com/MaudeManouvrier/PG-FD/blob/main/src/ToExecuteThePrototype.md)
+See [guidlines to execute the functions](https://github.com/MaudeManouvrier/PG-FD/blob/main/src/ToExecuteThePrototype.md).
 
 [^1]: https://networkx.org/
 [^2]: https://oer.gitlab.io/cs/functional-dependencies
