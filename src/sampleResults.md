@@ -70,7 +70,7 @@ print("Translation example Q2 of (Fan et al., 2017) into PG-Schema:\n", GED2PGS(
 Translation example Q2 of (Fan et al., 2017) into PG-Schema:
 
 `FOR (x:Country)
-MANDATORY y.name = z.name WITHIN (x)-[:capital]->(z:City)`
+MANDATORY y.name = z.name WITHIN (y:city)<-[:capital]-(x)-[:capital]->(z:city)`
 ***
 
 ### To replay the translation of example Q7 of [(Fan et al., 2017)](https://www.pure.ed.ac.uk/ws/portalfiles/portal/44159778/pods17.pdf)
