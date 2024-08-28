@@ -6,9 +6,9 @@ print("Translation of the gFD example of our article into PG-Schema:\n",gFD2PGS(
 ***
 Translation of the gFD example of our article into PG-Schema:
 
-` FOR x.ConfName WITHIN x:Conf
+` FOR x.Acronym WITHIN x:Conf
 	WHERE x.Acronym IS NOT NULL AND x.ConfName IS NOT NULL
-		EXCLUSIVE MANDATORY x.Acronym`
+		EXCLUSIVE MANDATORY x.ConfName`
 ***
 
 ### To replay the translation of GED example of Figure 3 in our article
