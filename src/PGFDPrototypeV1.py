@@ -260,7 +260,7 @@ def gFDArticleExample():
 # To translate gFD into PG-Schema
 def gFD2PGS(L,P,fd):
     constraint = "FOR "
-    for label in fd.lhs:
+    for label in fd.rhs:
             constraint += "x." + label + ","
     constraint = constraint[:len(constraint)-1] + " WITHIN x"
     if type(L) == set:
@@ -273,7 +273,7 @@ def gFD2PGS(L,P,fd):
             constraint += "x." + label + " IS NOT NULL AND "
         constraint = constraint[:len(constraint)-1-4]
         constraint += "\n\t\tEXCLUSIVE MANDATORY "
-    for label in fd.rhs:
+    for label in fd.lhs:
             constraint += "x." + label + ","
     constraint = constraint[:len(constraint)-1]
     return constraint
