@@ -4,7 +4,7 @@
 This repository contains the source code of PG-FD, a Python program that uses the *networkx*[^1] Python module of https://networkx.org/ and the *functional_dependencies*[^2] of https://oer.gitlab.io/cs/functional-dependencies.
 
 >[!NOTE] 
-For more details, please refer to the paper: Maude Manouvrier and Khalid Belhajjame, *PG-FD: Mapping Functional Dependencies to the Future Property Graph Schema Standard*, [ADBIS 2024](https://conferences.sigappfr.org/adbis2024/) - [Preprint version](https://hal.science/hal-04679790). [Slides of the presentation](https://github.com/MaudeManouvrier/PG-FD/blob/main/PGFD_Slides_ADBIS2024.pdf).
+For more details, please refer to the paper: Maude Manouvrier and Khalid Belhajjame, [*PG-FD: Mapping Functional Dependencies to the Future Property Graph Schema Standard*](https://link.springer.com/chapter/10.1007/978-3-031-70626-4_4), [ADBIS 2024](https://conferences.sigappfr.org/adbis2024/) - [Preprint version](https://hal.science/hal-04679790). [Slides of the presentation](https://github.com/MaudeManouvrier/PG-FD/blob/main/PGFD_Slides_ADBIS2024.pdf).
 
 Usage :
 
