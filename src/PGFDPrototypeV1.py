@@ -344,7 +344,7 @@ if __name__ == '__main__':
 
     # For example of GD of our article
     GP, X, Y = GPFigure1()
-    print("Translation example of GD of our article into PG-Schema:\n", GED2PGS(GP,X,Y), sep="")
+    print("Translation example of GD of our article into PG-Schema:\n", GD2PGS(GP,X,Y), sep="")
 
     # To define user Graph Pattern
     # GP = defineGraphPattern()
