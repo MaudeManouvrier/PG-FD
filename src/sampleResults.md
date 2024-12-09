@@ -38,7 +38,7 @@ IDENTIFIER x.title,y.id WITHIN (x)-[:SubmittedTo]->(y:Conf)`
 ### To replay the translation of GD example of our article
 ```python
 GP, X, Y = GPFigure1()
-print("Translation example of GD of our article into PG-Schema:\n", GED2PGS(GP,X,Y), sep="")
+print("Translation example of GD of our article into PG-Schema:\n", GD2PGS(GP,X,Y), sep="")
 ```
 ***
 Translation example of GD of our article into PG-Schema:
