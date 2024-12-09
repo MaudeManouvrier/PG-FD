@@ -44,8 +44,7 @@ print("Translation example of GD of our article into PG-Schema:\n", GD2PGS(GP,X,
 Translation example of GD of our article into PG-Schema:
 
 `FOR (x:Article)
-WHERE exists edge e,L(e)=SubmittedTo
-MANDATORY (x)-[e]->(y) WITHIN (x)-[:SubmittedTo]->(y:Conf)`
+MANDATORY e,y WITHIN (x)-[e:SubmittedTo]->(y:Conf)`
 ***
 
 ### To replay the translation of example Q1 of [(Fan et al., 2017)](https://www.pure.ed.ac.uk/ws/portalfiles/portal/44159778/pods17.pdf)
