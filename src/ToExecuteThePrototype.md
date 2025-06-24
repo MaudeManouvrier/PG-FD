@@ -8,12 +8,12 @@ pip install networkx
 pip install functional-dependencies
 ```
 ### To execute PG_FD
-- PGFDPrototypeV1.py: corresponds to the prototype for the ABDIS article.
-- PGFDPrototypeV2.py: corresponds to an extension of the ADBIS prototype.
+- `PGFDPrototypeV1.py`: corresponds to the prototype for the ABDIS article.
+- `PGFDPrototypeV2.py`: corresponds to an extension of the ADBIS prototype.
 
-To execute 
-  - Copy functional-dependencies.py, run_PGFD.py and PGFDPrototypeV2.py in the same repository
-  - Run run_PGFD.py
+To execute :
+  - Copy the files `functional-dependencies.py`, `run_PGFD.py` and `PGFDPrototypeV2.py` in the same repository
+  - Run `run_PGFD.py`
 
 ### To replay [examples](https://github.com/MaudeManouvrier/PG-FD/blob/main/src/sampleResults.md) of the article or examples of [(Fan et al., 2017)](https://www.pure.ed.ac.uk/ws/portalfiles/portal/44159778/pods17.pdf)
 
