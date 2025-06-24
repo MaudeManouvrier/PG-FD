@@ -1,7 +1,6 @@
 # PG-FD: Mapping Functional Dependencies to the Future Property Graph Schema Standard
-*Under construction*
 
-This repository contains the source code of PG-FD, a Python program that uses the *networkx*[^1] Python module of https://networkx.org/ and the *functional_dependencies*[^2] of https://oer.gitlab.io/cs/functional-dependencies.
+This repository contains the source code of PG-FD, a Python program that implements the PG-Schema[^4] translation of Graph Functional Dependencies approaches. Our prototype is intended as a proof of concept to validate the conceptual soundness of our approach. It is not optimized for performance or scalability.
 
 >[!NOTE] 
 For more details, please refer to the paper: Maude Manouvrier and Khalid Belhajjame, [*PG-FD: Mapping Functional Dependencies to the Future Property Graph Schema Standard*](https://link.springer.com/chapter/10.1007/978-3-031-70626-4_4), [ADBIS 2024](https://conferences.sigappfr.org/adbis2024/) - [Preprint version](https://hal.science/hal-04679790). [Slides of the presentation](https://github.com/MaudeManouvrier/PG-FD/blob/main/PGFD_Slides_ADBIS2024.pdf).
@@ -9,7 +8,8 @@ For more details, please refer to the paper: Maude Manouvrier and Khalid Belhajj
 >A french summary is also available in [INFORSID Conference proceedings](https://inforsid2025.sciencesconf.org/) - see [page 30](https://inforsid2025.sciencesconf.org/data/pages/actesINFORSID25_v10.pdf)
 
 
-Usage :
+##Preliminaries
+Our Python program was tested in a standard Python 3.9.12 environment on Windows (64 bits), using networkX[^1] module of https://networkx.org/ version 2.7.1 and an external Python module developed by a third party and made publicly available, the *functional_dependencies*[^2] of https://oer.gitlab.io/cs/functional-dependencies.
 
 ## To create the graph dependencies examples of our article 
 To replay the examples of the article, user can execute function `GPFigureX()` or `GPAsciiFigureX()` (to translate a graph pattern definied using ASCII art notation of Cypher [^3]), with 'X' corresponding to the number of the figure in the article. User should, for example, execute `GPFigure4()` to translate the Graph dependency of Figure 4 in the article.
