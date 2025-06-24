@@ -459,8 +459,8 @@ if __name__ == '__main__':
     print("Translation example of GPAR of Figure 6 our article into PG-Schema:\n", GAR2PGS(GP,addedEdge))
 
     # To compute the excution of time using the datasets of (Skavantzos et al., 2023) for gFD
-    t1,t2 = gFDSkavantzosExamples('Order','C:\\Users\\maude\\Desktop\\MAUDE\\RECHERCHE\\DataProfiling\\ADBIS2024_StageM2_2023\\northwind_gFDs_Modified.xlsx')
+    t1,t2 = gFDSkavantzosExamples('Order','northwind_gFDs_Modified.xlsx')
     print("Time to read file northwind:", t1, "Time to compute gFDs:", t2)
-    t1,t2 = gFDSkavantzosExamples('Entity','C:\\Users\\maude\\Desktop\\MAUDE\\RECHERCHE\\DataProfiling\\ADBIS2024_StageM2_2023\\offshore_gFDs_Modified.xlsx')
+    t1,t2 = gFDSkavantzosExamples('Entity','offshore_gFDs_Modified.xlsx')
     print("Time to read the file offshore:", t1, "Time to compute gFDs:", t2)
 
