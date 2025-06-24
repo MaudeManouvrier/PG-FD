@@ -3,7 +3,7 @@
 This repository contains the source code of PG-FD, a Python program that implements the PG-Schema[^4] translation of Graph Functional Dependencies approaches. Our prototype is intended as a proof of concept to validate the conceptual soundness of our approach. It is not optimized for performance or scalability.
 
 >[!NOTE] 
-For more details, please refer to the paper: Maude Manouvrier and Khalid Belhajjame, [*PG-FD: Mapping Functional Dependencies to the Future Property Graph Schema Standard*](https://link.springer.com/chapter/10.1007/978-3-031-70626-4_4), [ADBIS 2024](https://conferences.sigappfr.org/adbis2024/) - [Preprint version](https://hal.science/hal-04679790). [Slides of the presentation](https://github.com/MaudeManouvrier/PG-FD/blob/main/PGFD_Slides_ADBIS2024.pdf).
+For more details, please refer to the paper: Maude Manouvrier and Khalid Belhajjame, [*PG-FD: Mapping Functional Dependencies to the Future Property Graph Schema Standard*](https://link.springer.com/chapter/10.1007/978-3-031-70626-4_4), [ADBIS 2024](https://conferences.sigappfr.org/adbis2024/) - [Preprint version](https://hal.science/hal-04679790). [Slides of the presentation](https://github.com/MaudeManouvrier/PG-FD/blob/main/PGFD_Slides_ADBIS2024.pdf). The prototype is intended as a proof of concept to validate the conceptual soundness of our approach. It is not optimized for performance or scalability.
 >
 >A french summary is also available in [INFORSID Conference proceedings](https://inforsid2025.sciencesconf.org/) - see [page 30](https://inforsid2025.sciencesconf.org/data/pages/actesINFORSID25_v10.pdf)
 
