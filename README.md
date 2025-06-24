@@ -8,7 +8,7 @@ For more details, please refer to the paper: Maude Manouvrier and Khalid Belhajj
 >A french summary is also available in [INFORSID Conference proceedings](https://inforsid2025.sciencesconf.org/) - see [page 30](https://inforsid2025.sciencesconf.org/data/pages/actesINFORSID25_v10.pdf)
 
 
-##Preliminaries
+## Preliminaries
 Our Python program was tested in a standard Python 3.9.12 environment on Windows (64 bits), using networkX[^1] module of https://networkx.org/ version 2.7.1 and an external Python module developed by a third party and made publicly available, the *functional_dependencies*[^2] of https://oer.gitlab.io/cs/functional-dependencies.
 
 ## To create the graph dependencies examples of our article 
